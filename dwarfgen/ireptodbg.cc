@@ -154,11 +154,9 @@ specialAttrTransformations(Dwarf_P_Debug dbg,
                 0);
             attr2.setFormData(f);
             revisedattrs.push_back(attr2);
-            foundhipc = true;
             continue;
         }
         if(attrnum == DW_AT_low_pc) {
-            foundlopc = true;
             revisedattrs.push_back(attr);
             continue;
         }
